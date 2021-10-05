@@ -1,0 +1,18 @@
+:root {
+    --site-navigation-main-color: #212121;
+    --main-blue: #2196f3;
+    --description-text-color: #757575;
+    --background-footer-color: #2f303a;
+    --team-container-color: #f5f4fa;
+  }
+  body {
+    margin: 0;
+    background-color: #ffffff;
+    font-family: Roboto;
+    letter-spacing: -0.015em;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+.address {
+
+}
