@@ -7,16 +7,10 @@
   --background-color: #2f303a;
   --team-container-color: #f5f4fa;
   --buttons-background-color: #f5f4fa;
+  --footer-contacs-color: rgba(255, 255, 255, 0.6);
 }
-/* reseting default decoration */
-* {
-  text-decoration: none;
-  list-style: none;
-  border: none;
-  outline: none;
-}
+
 body {
-  margin: 0;
   background-color: #ffffff;
   font-family: Roboto;
   letter-spacing: 0.03em;
@@ -25,8 +19,12 @@ body {
   color: var(--description-text-color);
 }
 
+.list {
+  list-style: none;
+}
 /* header section */
 .logo {
+  text-decoration: none;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -41,8 +39,8 @@ body {
 }
 
 .link {
+  text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-main-color);
@@ -55,7 +53,7 @@ body {
 .link:focus {
   color: var(--main-blue);
 }
-.link.contacts-header {
+.link .contacts-header {
   color: var(--description-text-color);
 }
 
@@ -107,8 +105,21 @@ body {
   text-align: center;
   color: var(--text-main-color);
 }
+/* our team section */
+.teammate {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--text-main-color);
+}
+.teammate-function {
+  font-size: 16px;
+  line-height: 1.19;
+}
+/* portafolio start */
 /* buttons section */
 .button {
+  border: none;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
@@ -125,16 +136,31 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
+/* projects section */
+.project-link {
+  text-decoration: none;
+}
+
+.project-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--text-main-color);
+}
+.project-description {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--description-text-color);
+}
+/* portfolio end */
 
 /* footer section */
 .footer {
   background-color: var(--background-color);
 }
 .address {
-  font-family: Roboto;
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
@@ -142,5 +168,5 @@ body {
   color: var(--general-white);
 }
 .link.contacts {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-contacs-color);
 }
