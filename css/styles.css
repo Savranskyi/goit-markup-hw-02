@@ -25,6 +25,21 @@ body {
 .link {
   text-decoration: none;
 }
+.button {
+  border: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* header section */
 .logo {
   text-decoration: none;
@@ -47,7 +62,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--text-main-color);
 }
-..site-navigation-link.current {
+.site-navigation-link.current {
   color: var(--accent-color);
 }
 
@@ -126,7 +141,6 @@ body {
 /* portafolio start */
 /* buttons section */
 .filter-button {
-  border: none;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
